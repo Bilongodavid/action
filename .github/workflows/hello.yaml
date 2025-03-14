@@ -1,0 +1,15 @@
+name: HELLO WORD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: affiche message
+        run: echo "Hello GitHub Actions!"
